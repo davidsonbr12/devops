@@ -28,4 +28,6 @@ jobs:
         pip list
 
     - name: Run tests
-      run: python -m pytest tests.py -v
+      run: |
+        python -m pytest tests.py -v
+        python -m pytest add.py -v
